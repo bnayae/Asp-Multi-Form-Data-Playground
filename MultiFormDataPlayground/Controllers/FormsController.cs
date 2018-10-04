@@ -11,30 +11,9 @@ using MultiFormDataPlayground.Models;
 
 namespace MultiFormDataPlayground.Controllers
 {
-    [RoutePrefix("api/values")]
-    public class ValuesController : ApiController
+    [RoutePrefix("api/forms")]
+    public class FormsController : ApiController
     {
-        // GET api/values
-        [Route]
-        public async Task<DTO[]> Get()
-        {
-            return new DTO[0];
-        }
-
-        // GET api/values/5
-        [Route("{name}")]
-        public Task<DTO> Get(string name)
-        {
-            throw new NotImplementedException();
-        }
-        [Route("b")]
-        [HttpPost]
-        public async Task<IHttpActionResult> PostX(
-            //[FromBody]string name,
-            [FromBody]params HttpPostedFileBase[] commands)
-        {
-            return Ok();
-        }
 
         // POST api/values
         [HttpPost]

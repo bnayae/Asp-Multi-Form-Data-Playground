@@ -6,8 +6,26 @@
     <title></title>
 </head>
 <body>
-    <form name="form1" method="post" enctype="multipart/form-data" action="http://localhost:54907/api/values">
-        <h3>A</h3>
+    <form name="form1" method="post" enctype="multipart/form-data" action="http://localhost:54907/api/forms">
+        <h3>Form</h3>
+        <div>
+            <label for="caption">Image Caption</label>
+            <input name="name" type="text" />
+        </div>
+        <div>
+            <label for="caption">Image Caption</label>
+            <input name="date" type="date" />
+        </div>
+        <div>
+            <label for="image1">Image File</label>
+            <input name="data" type="file" />
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+    <form name="form2" method="post" enctype="multipart/form-data" action="http://localhost:54907/api/in-mems">
+        <h3>In-Memory</h3>
         <div>
             <label for="caption">Image Caption</label>
             <input name="name" type="text" />
