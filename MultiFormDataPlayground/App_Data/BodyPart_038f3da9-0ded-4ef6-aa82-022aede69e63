@@ -1,0 +1,5 @@
+namespace JellyBtn.Infra.Service.Server.SDK.Api.Enums
+{
+public enum Enum_02 {A=10000,B=3,C=12,D=233}
+public enum Enum_01 {a=120,b=135,c=-21}
+}
